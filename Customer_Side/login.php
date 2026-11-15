@@ -19,7 +19,7 @@ $allowedRedirects = [
 $requestedRedirect = $_GET['redirect'] ?? '';
 $redirect = in_array($requestedRedirect, $allowedRedirects, true)
     ? $requestedRedirect
-    : 'index.php';
+   : '/Customer_Side/index.php';
 
 if (isset($_SESSION['customer_id'])) {
     header('Location: ' . $redirect);
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $requestedRedirect = $_POST['redirect'] ?? '';
     $redirect = in_array($requestedRedirect, $allowedRedirects, true)
         ? $requestedRedirect
-        : 'index.php';
+       : '/Customer_Side/index.php';
     $mode = $_POST['form_mode'] ?? 'login';
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
