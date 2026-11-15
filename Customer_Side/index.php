@@ -1,4 +1,3 @@
-
 <?php
 // Start the customer session and connect to the database.
 if (session_status() === PHP_SESSION_NONE) {
