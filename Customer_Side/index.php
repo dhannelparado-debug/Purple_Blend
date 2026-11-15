@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if (empty($_SESSION['customer_id'])) {
-    header('Location: /login.php');
+    header('Location: /Customer_Side/login.php');
     exit;
 }
 
