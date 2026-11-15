@@ -1,0 +1,8 @@
+<FilesMatch "(?i)\.sql$">
+    Require all denied
+</FilesMatch>
+
+
+RewriteEngine On
+
+RewriteRule ^$ Purple_Blend/Customer_Side/index.php [L]
